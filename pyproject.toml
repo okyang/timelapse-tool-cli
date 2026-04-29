@@ -16,5 +16,9 @@ dependencies = [
 [project.scripts]
 timelapse-tool-cli = "src.main:main"
 
+[tool.pytest.ini_options]
+testpaths = ["test"]
+python_files = ["test_*.py"]
+
 [tool.setuptools]
 packages = ["src"]
