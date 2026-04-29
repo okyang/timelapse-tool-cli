@@ -17,13 +17,34 @@ uv tool install -e .
 Then go ahead and run the tool:
 
 ```shell
-uv timelapse-tool-cli <path_to_images_folder> --fps 20 --darkframe-perc
+uv timelapse-tool-cli <path_to_images_folder> --fps 20
 ```
 
 Get help:
 
 ```shell
 uv timelapse-tool-cli --help
+```
+
+For example:
+
+```shell
+okyang@okyang-Laptop-16-AMD-Ryzen-7040-Series:~/code/my-full-stack$ timelapse-tool-cli --help
+Usage: timelapse-tool-cli [OPTIONS] IMAGE_DIR
+
+  Create a timelapse video from a directory of images.
+
+  IMAGE_DIR is the path to the directory containing your images.
+
+Options:
+  -o, --output PATH             Output video filename. Defaults to
+                                'timelapse.mp4'
+  -f, --fps INTEGER             Frames per second for the video. Defaults to
+                                10.
+  -d, --darkframe-perc INTEGER  Dark frame threshold percentage. Frames with
+                                average brightness below this are filtered.
+                                Defaults to 20.
+  --help                        Show this message and exit.
 ```
 
 ## Local Development
