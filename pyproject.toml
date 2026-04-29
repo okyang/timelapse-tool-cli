@@ -1,0 +1,20 @@
+[project]
+name = "timelapse-tool-cli"
+version = "0.1.0"
+description = "Quick tool that can turn a directory of images into a timelapse video."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+  "click>=8.3.3",
+  "numpy>=2.4.4",
+  "opencv-python>=4.13.0.92",
+  "pytest>=9.0.3",
+  "ruff>=0.15.10",
+  "tqdm>=4.67.3",
+]
+
+[project.scripts]
+timelapse-tool-cli = "src.main:main"
+
+[tool.setuptools]
+packages = ["src"]
